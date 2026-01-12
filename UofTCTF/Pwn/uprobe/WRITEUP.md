@@ -259,4 +259,4 @@ io.close()
 
 ## Why this works (in one sentence)
 
-Because `uprobe-runner` (running as root) lets you force the kernel to plant an `int3` (`0xCC`) at an attacker‑chosen offset, you can corrupt a byte inside `busybox`’s privilege‑dropping code so it no longer drops root — then you read `/flag`. The flag is: uoftctf{n0n_c0ns74n7_shif7_is_700_big_0f_4n_3x73nsi0n}
+Because `uprobe-runner` (running as root) lets you force the kernel to plant an `int3` (`0xCC`) at an attacker‑chosen offset, you can corrupt a byte inside `busybox`’s privilege‑dropping code so it no longer drops root — then you read `/flag`.
